@@ -1,0 +1,91 @@
+/* Common styles */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(135deg, #ff6d6d, #ff2626);
+  font-family: 'Ubuntu', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input[type='button'] {
+  border: 0;
+  padding: 15px 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: 0;
+}
+
+.btn {
+  color: #da4c56;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #ffece4;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ffc9b6;
+}
+
+.btn:active,
+.btn.active {
+  background-color: #ffc9b6;
+  box-shadow: inset 0px 0px 5px 5px #ff9191;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Tabs */
+.tabs__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Timer */
+.timer {
+  margin: 100px 0;
+  font-size: 105px;
+  color: #ffece4;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons .btn {
+  margin-right: 15px;
+}
+
+.buttons .btn:last-child {
+  margin-right: 0;
+}
